@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Manrope:wght@300;400;500;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*
+ * App color scheme — edit values here to retheme the whole app.
+ * Mirrors concept/src/styles.css
+ */
+:root {
+  --radius: 0.5rem;
+  --background: oklch(0.16 0.005 60);
+  --foreground: oklch(0.96 0.01 80);
+  --card: oklch(0.19 0.006 60);
+  --card-foreground: oklch(0.96 0.01 80);
+  --popover: oklch(0.19 0.006 60);
+  --popover-foreground: oklch(0.96 0.01 80);
+  --primary: oklch(0.78 0.13 85);
+  --primary-foreground: oklch(0.15 0.005 60);
+  --secondary: oklch(0.24 0.006 60);
+  --secondary-foreground: oklch(0.96 0.01 80);
+  --muted: oklch(0.22 0.005 60);
+  --muted-foreground: oklch(0.65 0.015 75);
+  --accent: oklch(0.28 0.01 60);
+  --accent-foreground: oklch(0.96 0.01 80);
+  --destructive: oklch(0.62 0.2 25);
+  --destructive-foreground: oklch(0.98 0 0);
+  --border: oklch(0.28 0.008 60);
+  --input: oklch(0.28 0.008 60);
+  --ring: oklch(0.78 0.13 85);
+  --gold: oklch(0.78 0.13 85);
+  --gold-soft: oklch(0.88 0.09 90);
+  --buy: oklch(0.72 0.15 165);
+  --sell: oklch(0.72 0.16 55);
+  --sidebar: oklch(0.13 0.004 60);
+  --sidebar-foreground: oklch(0.92 0.01 80);
+  --sidebar-primary: oklch(0.78 0.13 85);
+  --sidebar-primary-foreground: oklch(0.15 0.005 60);
+  --sidebar-accent: oklch(0.22 0.006 60);
+  --sidebar-accent-foreground: oklch(0.96 0.01 80);
+  --sidebar-border: oklch(0.24 0.006 60);
+  --sidebar-ring: oklch(0.78 0.13 85);
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans;
+    font-feature-settings: "ss01", "cv11";
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    @apply font-display;
+    letter-spacing: -0.02em;
+  }
+}

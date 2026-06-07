@@ -1,0 +1,30 @@
+{
+  "name": "investwhat-interview-backend",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "ts-node-dev --respawn --transpile-only src/app.ts",
+    "sync:politicians": "ts-node src/scripts/syncPoliticians.ts",
+    "seed:politicians": "ts-node src/scripts/seedFromFixture.ts",
+    "test:parser": "ts-node src/scripts/testParser.ts"
+  },
+  "dependencies": {
+    "better-sqlite3": "^9.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^17.4.2",
+    "express": "^4.18.2",
+    "node-cron": "^4.2.1",
+    "ts-node": "^10.9.2",
+    "uuid": "^9.0.0",
+    "yahoo-finance2": "^2.13.3"
+  },
+  "devDependencies": {
+    "@types/better-sqlite3": "^7.6.8",
+    "@types/cors": "^2.8.17",
+    "@types/express": "^4.17.21",
+    "@types/node": "^20.11.0",
+    "@types/uuid": "^9.0.7",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.3.3"
+  }
+}
